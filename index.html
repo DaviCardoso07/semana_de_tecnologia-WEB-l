@@ -1,78 +1,191 @@
 <!DOCTYPE html>
+
+<!-- CSS3 - Semana de Tecnologia e Cultura -->
+
 <html>
     <head>
-        <title>Agenda de Eventos</title>
+        <title>Css-3-Semana-de-Tecnologia-e-Cultura</title>
+
+        <!-- Estilizar a página com CSS interno -->
         <style>
-            body {font-family: Arial, sans-serif; background-color: #f5f5f5;}
-            h2 {color: #8e44ad; font-size: 24px; letter-spacing: 2px;}
-            p {font-size: 16px; line-height: 1.6; text-align: justify;}
-            ul {font-size: 18px; line-height: 1.8;}
-            a {color: #21618c;}
-            a:hover {color: rgb(231, 76, 60);}
-            .descricoes {background-color: #d6eaf8; text-align: center; font-size: 18px;}
-            .datas {color: #c0392b; font-weight: bold;}
-            #contato {background-color: #d5f5e3; text-align: center;}
-            #titulo_principal {color: rgb(27, 80, 116); font-size: 36px; font-weight: bold; text-align: center; font-family: "Playfair Display", serif;}
-            .evento-destaque {background-color: lightblue;}
-            .evento-destaque .descricoes {color: yellowgreen; font-size: 20px; font-weight: bold;}
+            body {
+                font-family: Arial, sans-serif;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            a:hover {
+                color: rgb(227, 20, 20);
+            }
+            header {
+                background-color: aquamarine;
+                padding: 30px;
+                margin-bottom: 20px;
+            }
+            nav {
+                background-color: antiquewhite;
+                padding: 15px;
+            }
+            section {
+                background-color: white;
+                padding: 20px;
+                margin: 20px;
+                border: solid 2px;
+            }
+            img {
+                width: 400px;
+                height: 250px;
+                border: solid 3px;
+            }
+            table {
+                width: 100%;
+                border: 2px;
+                padding: 20px;
+            }
+            footer {
+                background-color: #F5F5F5;
+                padding: 20px;
+                text-align: center;
+            }
+            .box{
+                width: 300px;
+                height: 180px;
+                padding: 20px;
+                margin: 15px;
+                border: solid 3px;
+            }
+            .box1{
+                background-color: lightblue;
+                border-color: darkblue;
+                border-radius: 0px;
+            }
+            .box2{
+                background-color: lightgreen;
+                border-color: green;
+                border-radius: 30px;  
+            }
+            .box3{
+                background-color: lightcoral;
+                border-color: 5px, purple;
+                border-radius: 30px;
+                border-top-left-radius: 0px;
+
+            }
+            .sec_sobre{
+                text-align: justify;
+            }
+            .subtitulos {
+                font-size: 24px;
+            }
+            #titulop{
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .titulos {
+                background-color:aqua;
+                color: black;
+            }
+            .titulosatvs {
+                font-weight: bolder;
+            }
         </style>
     </head>
+
     <body>
-        <main>
-            <header>
-                <h1 id="titulo_principal">Eventos do IFCE Campus Maranguape</h1>
-                <p class="descricoes">Essa página tem o intuito de apresentar as informações sobre os útimos eventos no campus.</p>
-            </header>
-            
-            <section>
-                <h2>Jogos interclasses</h2>
-                <p class="descricoes">Jogos de quadra que reunem todas as turmas do curso técnico integrado em 3 dias de muita emoção e diversão.</p>
-                <p>Modalidades:</p>
-                <ul>
-                    <li>Futsal;</li>
-                    <li>Vôlei;</li>
-                    <li>Carimba.</li>
-                </ul>
-                <p>Informações</p>
-                <p class="datas">Data: 22/04/2026 a 24/04/2026</p>
-                <p>Local: IFCE Campus Maranguape</p>
-                <a href="https://www.instagram.com/ed.fisica.ifcempe/">Instagram da organização</a>
-            </section>
-            
-            <section class="evento-destaque">
-                <h2>OFA-IFCE</h2>
-                <p class="descricoes">Olímpiada organizada pelo IFCE Campus Maranguape com o intuito de incentivar os alunos do campus e de outras instituições a expandirem e testarem seus conhecimentos em física.</p>
-                <h3>Escolaridade</h3>
-                <ul>
-                    <li>Ensino fundamental;</li>
-                    <li>Ensino Médio;</li>
-                    <li>Ensino Superior.</li>
-                </ul>
-                <p>Informações</p>
-                <p class="datas">Data: 03/10/2026</p>
-                <p>Local: IFCE Campus Maranguape</p>
-                <a href="https://www.instagram.com/coi_maranguape?utm_source=ig_web_button_share_sheet&dlrf=ZDNlZDc0MzIxNw==">Instagram da organização</a>
-            </section>
+        <!-- Cabeçalho -->
+        <header>
+            <h1 class="titulos" id="titulop">Semana de Tecnologia e Cultura</h1>
+            <p>Bem vindo ao site da Semana de Tecnologia e Cultura do ifce <i>campus</i> Maranguape </p>
+        </header>
 
-            <section>
-                <h2>Simulado do ENEM</h2>
-                <p class="descricoes">Simulado organizado pelo IFCE Campus Maranguape com o apoio do Laboratório de Sistemas de Dados(LSD). O simulado tem o intuito de incentivar os alunos do técnico integrado do campus a treinarem os seus conhecimentos, com a finalidade de estarem preparados para o exame definitivo</p>
-                <p>Inscrições abertas para:</p>
-                <ul>
-                    <li>1° ano do Ensino Médio;</li>
-                    <li>2° ano do Ensino Médio;</li>
-                    <li>3° ano do Ensino Médio.</li>
-                </ul>
-                <p>Informações</p>
-                <p class="datas">Data: 07/10/2026 e 15/10/2026</p>
-                <p>Local: IFCE Campus Maranguape</p>
-                <a href="http://lsd.maranguape.ifce.edu.br">Site oficial da organização</a>
-            </section>
+        <!-- Menu de Navegação -->
+        <nav>
+            <h2 class="titulos subtitulos">Navegue pela página:</h2>
+            <ul>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Programacao">Programação</a></li>
+                <li><a href="#Atividades">Atividades</a></li>
+                <li><a href="#Inscricoes">Inscrição</a></li>
+                <li><a href="#Rodape">Informações</a></li>
+            </ul>
+        </nav>
 
-            <section id="contato">
-                <h2>Contato</h2>
-                <p class="descricoes">Para entrar em contato conosco e para saber de mais informações sobre esses eventos e outros futuros acesse o nosso <a href="https://www.instagram.com/ifcemaranguape?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==">Instagram</a></p>
-            </section>
-        </main>
+        <!-- Seção Sobre -->
+        <section id="Sobre">
+            <h2 class="titulos subtitulos">Sobre o Evento:</h2>
+            <p class="sec_sobre">Evento vai reunir os alunos para atividades de entrertenimento e aprendizado.</p>
+            <p class="sec_sobre">Venha Participar!!!</p>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgs9TWtuvrSxBdV5JekaeWTrT0xyem_4WYeaiVBvxzw&s" alt="imgteste" height="100">
+                <figcaption>Imagem sobre o evento</figcaption>
+            </figure>
+        </section>
+        
+        <!-- SEÇÃO PROGRAMAÇÃO -->
+        <section id="Programacao">
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9hrs</td>
+                        <td>Oficina de Programação</td>
+                        <td>Laboratório de informática III</td>
+                    </tr>
+
+                    <tr>
+                        <td>13hrs</td>
+                        <td>Torneio de xadrez</td>
+                        <td>Quadra</td>
+                    </tr>
+
+                    <tr>
+                        <td>16hrs</td>
+                        <td>Mostra Cultural</td>
+                        <td>Auditório</td>
+                    </tr>
+ 
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Seção Atividades com divs -->
+        <section id="Atividades">
+            <h2 class="titulos subtitulos">Atividades:</h2>
+            <div class="box box1">
+                <p class="tituloatvs">Atividade 1 - Oficina de Programação</p>
+            </div>
+            <div class="box box2">
+                <p class="tituloatvs">Atividade 2 - Torneio de xadrez</p>
+            </div>
+            <div class="box box3">
+                <p class="tituloatvs">Atividade 3 - Mostra Cultural</p>
+            </div>
+        </section>
+
+        <!-- Seção Incrições -->
+        <section id="Inscricoes">
+            <h2 class="titulos subtitulos">Inscrição:</h2>
+            <p>Para se inscrever acesse o nosso site</p>
+            <a href="https://portal.ifce.edu.br/campus/maranguape/">Site do IFCE</a>
+        </section>
+
     </body>
+    
+    <!-- Rodapé com informações legais -->
+    <footer id="Rodape">
+        <h2 class="titulos subtitulos">Informações: </h2>
+        <p>Para mais informações acesse o nosso <a href="https://www.instagram.com/ifcemaranguape/">instagram</a></p>
+    </footer>
+
 </html>
