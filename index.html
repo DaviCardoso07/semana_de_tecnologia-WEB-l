@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 
 <!-- CSS3 - Semana de Tecnologia e Cultura -->
+<!-- Davi e Arthur - um fez isso e outro aquilo -->
 
 <html>
     <head>
-        <title>Css-3-Semana-de-Tecnologia-e-Cultura</title>
+        <title>Semana De Tecnologia e Cultura</title>
 
         <!-- Estilizar a página com CSS interno -->
         <style>
-            body {
-                font-family: Arial, sans-serif;
+
+            .TitulosSecoes {
+                color:green;
+                background-color:greenyellow;
             }
-            p {
-                font-size: 16px;
-                line-height: 1.6;
+            .TituloAtv {
+                color:rgb(39, 0, 37) ;
+                font-weight: bold;
             }
-            a:hover {
-                color: rgb(227, 20, 20);
+            .CaixaAtividade {
+                width: 300px;
+                height: 180px;
+                padding: 20px;
+                margin: 15px;
+                border: solid 3px;
             }
-            header {
-                background-color: aquamarine;
+            .Subtitulos {
+                font-size: 24px;
+            }
+
+            #TituloPrincipal {
+                color:darkgreen;
+                font-size: 36px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            #Sobre {
+                text-align: justify;
+            }
+            #AtividadeA {
+                background-color: lightblue;
+                border: solid darkblue;
+                border-radius: 0%;
+                color: darkblue;
+            }
+            #AtividadeB {
+                background-color: greenyellow;
+                border: solid green;
+                border-radius: 5%;
+                color: rgb(0, 90, 43);
+            }
+            #AtividadeC {
+                background-color: coral;
+                border: solid purple;
+                border-radius: 30px;
+                border-top-left-radius: 0px;
+                color: rgb(128, 0, 26);
+            }
+            #Cabecalho {
+                background-color: greenyellow;
                 padding: 30px;
                 margin-bottom: 20px;
             }
-            nav {
-                background-color: antiquewhite;
+            #Navegacao {
+                background-color:springgreen;
                 padding: 15px;
             }
+
             section {
                 background-color: white;
                 padding: 20px;
@@ -40,69 +80,41 @@
             }
             table {
                 width: 100%;
-                border: 2px;
+                border: solid 2px;
                 padding: 20px;
             }
             footer {
-                background-color: #F5F5F5;
+                background-color:turquoise;
                 padding: 20px;
                 text-align: center;
             }
-            .box{
-                width: 300px;
-                height: 180px;
-                padding: 20px;
-                margin: 15px;
-                border: solid 3px;
+            html {
+                font-family: Arial, Helvetica, sans-serif;
             }
-            .box1{
-                background-color: lightblue;
-                border-color: darkblue;
-                border-radius: 0px;
+            p {
+                font-size: 16px;
+                line-height: 1.6;
             }
-            .box2{
-                background-color: lightgreen;
-                border-color: green;
-                border-radius: 30px;  
+            a:hover {
+                color: red;
             }
-            .box3{
-                background-color: lightcoral;
-                border-color: 5px, purple;
-                border-radius: 30px;
-                border-top-left-radius: 0px;
+            body {
+                background-color:rgb(210, 255, 202);
+            }
 
-            }
-            .sec_sobre{
-                text-align: justify;
-            }
-            .subtitulos {
-                font-size: 24px;
-            }
-            #titulop{
-                font-size: 24px;
-                text-align: center;
-                letter-spacing: 2px;
-            }
-            .titulos {
-                background-color:aqua;
-                color: black;
-            }
-            .titulosatvs {
-                font-weight: bolder;
-            }
         </style>
     </head>
 
     <body>
         <!-- Cabeçalho -->
-        <header>
-            <h1 class="titulos" id="titulop">Semana de Tecnologia e Cultura</h1>
-            <p>Bem vindo ao site da Semana de Tecnologia e Cultura do ifce <i>campus</i> Maranguape </p>
+        <header id="Cabecalho">
+            <h1 id="TituloPrincipal" >Semana de Tecnologia e Cultura</h1>
+            <p class="Subtitulos">Bem vindo ao site da Semana de Tecnologia e Cultura do ifce <i>campus</i> Maranguape </p>
         </header>
 
         <!-- Menu de Navegação -->
-        <nav>
-            <h2 class="titulos subtitulos">Navegue pela página:</h2>
+        <nav id="Navegacao">
+            <h2 id="TituloNav">Navegue pela página:</h2>
             <ul>
                 <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#Programacao">Programação</a></li>
@@ -114,18 +126,18 @@
 
         <!-- Seção Sobre -->
         <section id="Sobre">
-            <h2 class="titulos subtitulos">Sobre o Evento:</h2>
-            <p class="sec_sobre">Evento vai reunir os alunos para atividades de entrertenimento e aprendizado.</p>
-            <p class="sec_sobre">Venha Participar!!!</p>
+            <h2 class="TitulosSecoes">Sobre o Evento:</h2>
+            <p >Evento vai reunir os alunos para atividades de entrertenimento e aprendizado.</p>
+            <p >Venha Participar!!!</p>
             <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgs9TWtuvrSxBdV5JekaeWTrT0xyem_4WYeaiVBvxzw&s" alt="imgteste" height="100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSbnkbnXVGcUzhJjKgenOQcW4gZRCXW7RkOpl9edutg&s=10" alt="imgteste" height="100">
                 <figcaption>Imagem sobre o evento</figcaption>
             </figure>
         </section>
         
         <!-- SEÇÃO PROGRAMAÇÃO -->
         <section id="Programacao">
-
+            <h2 class="TitulosSecoes">Progamação das atividades:</h2>
             <table border="1">
                 <thead>
                     <tr>
@@ -161,22 +173,25 @@
 
         <!-- Seção Atividades com divs -->
         <section id="Atividades">
-            <h2 class="titulos subtitulos">Atividades:</h2>
-            <div class="box box1">
-                <p class="tituloatvs">Atividade 1 - Oficina de Programação</p>
+            <h2 class="TitulosSecoes">Atividades:</h2>
+            <div id="AtividadeA" class="CaixaAtividade">
+                <h3 class="TituloAtv">Atividade 1 - Oficina de Programação</h3>
+                <p>Participantes aprenderão sobre trabalhos atuais e como o mercado lida com programadores. Além disso, despertar interesse naqueles que participarem.</p>
             </div>
-            <div class="box box2">
-                <p class="tituloatvs">Atividade 2 - Torneio de xadrez</p>
+            <div id="AtividadeB" class="CaixaAtividade">
+                <h3 class="TituloAtv">Atividade 2 - Torneio de xadrez</h3>
+                <p>Participantes colocarão em jogo suas habilidades e estratégias em uma grande disputa de xadrez. Regras da competição em breve serão divulgadas ao público, fique atento!</p>
             </div>
-            <div class="box box3">
-                <p class="tituloatvs">Atividade 3 - Mostra Cultural</p>
+            <div id="AtividadeC" class="CaixaAtividade">
+                <h3 class="TituloAtv">Atividade 3 - Mostra Cultural</h3>
+                <p>Uma exposição de diversas artes de diferentes culturas com o prósito de inspirar futuros artistas e suas habilidades criativas de se expressar ao mundo</p>
             </div>
         </section>
 
-        <!-- Seção Incrições -->
+        <!-- Seção Inscrições -->
         <section id="Inscricoes">
-            <h2 class="titulos subtitulos">Inscrição:</h2>
-            <p>Para se inscrever acesse o nosso site</p>
+            <h2 class="TitulosSecoes">Inscrição:</h2>
+            <p>Não deixe de se inscrever! Inscrições abertas até xx/xx/xx. Tenha certeza que vai comparecer após confirmar inscrição!</p>
             <a href="https://portal.ifce.edu.br/campus/maranguape/">Site do IFCE</a>
         </section>
 
@@ -184,8 +199,8 @@
     
     <!-- Rodapé com informações legais -->
     <footer id="Rodape">
-        <h2 class="titulos subtitulos">Informações: </h2>
-        <p>Para mais informações acesse o nosso <a href="https://www.instagram.com/ifcemaranguape/">instagram</a></p>
+        <h2 class="TitulosSecoes">Informações: </h2>
+        <p>Gostou? Quer saber futuros eventos do IFCE? acesse nosso <a href="https://www.instagram.com/ifcemaranguape/">instagram</a> para ficar ligado nas próximas novidades/eventos</p>
     </footer>
 
 </html>
